@@ -1,0 +1,24 @@
+/node/
+node_tmp/
+node_modules/
+/**/package-lock.json
+
+######################
+# Intellij
+######################
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+classes/
+out/
+
+######################
+# Visual Studio Code
+######################
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/project.code-snippets
