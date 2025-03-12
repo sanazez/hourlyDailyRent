@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "CoFo Sans";
+    src: url("../fonts/CoFoSans-Bold.eot");
+    src:
+        local("CoFo Sans Bold"),
+        local("CoFoSans-Bold"),
+        url("../fonts/CoFoSans-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/CoFoSans-Bold.woff2") format("woff2"),
+        url("../fonts/CoFoSans-Bold.woff") format("woff"),
+        url("../fonts/CoFoSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CoFo Sans";
+    src: url("../fonts/CoFoSans-Black.eot");
+    src:
+        local("CoFo Sans Black"),
+        local("CoFoSans-Black"),
+        url("../fonts/CoFoSans-Black.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/CoFoSans-Black.woff2") format("woff2"),
+        url("../fonts/CoFoSans-Black.woff") format("woff"),
+        url("../fonts/CoFoSans-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CoFo Sans";
+    src: url("../fonts/CoFoSans-Regular.eot");
+    src:
+        local("CoFo Sans"),
+        local("CoFoSans-Regular"),
+        url("../fonts/CoFoSans-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/CoFoSans-Regular.woff2") format("woff2"),
+        url("../fonts/CoFoSans-Regular.woff") format("woff"),
+        url("../fonts/CoFoSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CoFo Sans";
+    src: url("../fonts/CoFoSans-Medium.eot");
+    src:
+        local("CoFo Sans Medium"),
+        local("CoFoSans-Medium"),
+        url("../fonts/CoFoSans-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/CoFoSans-Medium.woff2") format("woff2"),
+        url("../fonts/CoFoSans-Medium.woff") format("woff"),
+        url("../fonts/CoFoSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    font-family: "CoFo Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.hourly-daily-rent-wrapper {
+    width: 100%;
+    max-width: 687px;
+    margin: 0 auto;
+    background-color: #f4f7fb;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #171524;
+}
+
+.hourly-daily-rent-wrapper .toggle-rent-modes {
+    display: flex;
+    gap: 15px;
+}
+
+.hourly-daily-rent-wrapper .rent-mode-btn {
+    background: none;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 12px 15px;
+    border-radius: 15px;
+    border: 1px solid #7c67ff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.hourly-daily-rent-wrapper .rent-mode-btn.active {
+    background-color: #7c67ff;
+    color: white;
+    cursor: default;
+}
+
+.hourly-daily-rent-wrapper .rental-date-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hourly-daily-rent-wrapper .rental-date {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    justify-content: center;
+}
+
+.hourly-daily-rent-wrapper .rental-date-days {
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    transition: 0.8s;
+}
+
+.hourly-daily-rent-wrapper .rental-date-days-wrapper {
+    overflow: hidden;
+}
+
+.hourly-daily-rent-wrapper .rental-time-hours-wrapper {
+    overflow: hidden;
+}
+
+.hourly-daily-rent-wrapper .rental-date-day-wrapper {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e9eaf3;
+    width: 68px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hourly-daily-rent-wrapper .rental-date-day-wrapper.selected {
+    background-color: #7c67ff;
+}
+
+.hourly-daily-rent-wrapper .rental-date-day-wrapper.selected .rental-date-day {
+    color: white;
+}
+
+.hourly-daily-rent-wrapper .rental-date-day-wrapper.selected .rental-date-month {
+    color: #e9eaf3;
+}
+
+.hourly-daily-rent-wrapper .rental-date-day-wrapper:hover {
+    cursor: pointer;
+}
+
+.hourly-daily-rent-wrapper .rental-date-day {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.hourly-daily-rent-wrapper .rental-date-month {
+    font-size: 14px;
+    color: #848596;
+}
+
+.hourly-daily-rent-wrapper .rental-date-arrow {
+    width: 20px;
+    height: 59px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e9eaf3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+.hourly-daily-rent-wrapper .rental-date-arrow-left {
+    top: 0;
+    left: 0;
+}
+
+.hourly-daily-rent-wrapper .rental-date-arrow-right {
+    top: 0;
+    right: 0;
+}
+.hourly-daily-rent-wrapper .rental-time-wrapper {
+    overflow: hidden;
+}
+.hourly-daily-rent-wrapper .rental-time {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    justify-content: center;
+}
+
+.hourly-daily-rent-wrapper .rental-time-hours {
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    transition: 0.8s;
+}
+
+.hourly-daily-rent-wrapper .rental-time-hour {
+    width: 48px;
+    height: 37px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #e9eaf3;
+    font-size: 14px;
+    font-weight: 500;
+    color: #171524;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.hourly-daily-rent-wrapper .rental-time-hour:hover {
+    cursor: pointer;
+}
+
+.hourly-daily-rent-wrapper .rental-time-hour.disabled {
+    background-color: #f4f7fb;
+    color: #c8c9d9;
+    cursor: default;
+}
+
+.hourly-daily-rent-wrapper .rental-time-hour.selected {
+    color: white;
+    background-color: #7c67ff;
+}
+
+.hourly-daily-rent-wrapper .rental-date-arrow.rental-time-arrow-left {
+    height: 37px;
+    top: 0;
+    left: 0;
+}
+
+.hourly-daily-rent-wrapper .rental-date-arrow.rental-time-arrow-right {
+    height: 37px;
+    top: 0;
+    right: 0;
+}
+
+@media (min-width: 360px) {
+    .hourly-daily-rent-wrapper {
+        width: 340px;
+    }
+    .hourly-daily-rent-wrapper .rent-mode-btn {
+        padding: 11px 9px;
+    }
+    .hourly-daily-rent-wrapper .rental-date-day-wrapper {
+        width: 59px;
+    }
+    .hourly-daily-rent-wrapper .rental-date-days-wrapper {
+        width: 251px;
+    }
+    .hourly-daily-rent-wrapper .rental-time-hour {
+        width: 46px;
+    }
+    .hourly-daily-rent-wrapper .rental-time-hours-wrapper {
+        width: 250px;
+    }
+}
+
+@media (min-width: 480px) {
+    .hourly-daily-rent-wrapper {
+        width: 440px;
+    }
+    .hourly-daily-rent-wrapper .rent-mode-btn {
+        padding: 11px 15px;
+    }
+    .hourly-daily-rent-wrapper .rental-date-day-wrapper {
+        width: 66px;
+    }
+    .hourly-daily-rent-wrapper .rental-date-days-wrapper {
+        width: 350px;
+    }
+    .hourly-daily-rent-wrapper .rental-time-hour {
+        width: 54px;
+    }
+    .hourly-daily-rent-wrapper .rental-time-hours-wrapper {
+        width: 349px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hourly-daily-rent-wrapper {
+        width: 687px;
+    }
+    .hourly-daily-rent-wrapper .rental-date-day-wrapper {
+        width: 70px;
+    }
+    .hourly-daily-rent-wrapper .rental-time-hour {
+        width: 62px;
+    }
+    .hourly-daily-rent-wrapper .rental-date-days-wrapper {
+        width: 595px;
+    }
+    .hourly-daily-rent-wrapper .rental-time-hours-wrapper {
+        width: 598px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hourly-daily-rent-wrapper {
+        width: 405px;
+    }
+    .hourly-daily-rent-wrapper .rental-date-day-wrapper {
+        width: 59px;
+    }
+    .hourly-daily-rent-wrapper .rental-time-hour {
+        width: 48px;
+    }
+    .hourly-daily-rent-wrapper .rental-date-days-wrapper {
+        width: 315px;
+    }
+    .hourly-daily-rent-wrapper .rental-time-hours-wrapper {
+        width: 313px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .hourly-daily-rent-wrapper {
+        width: 522px;
+    }
+    .hourly-daily-rent-wrapper .rental-date-day-wrapper {
+        width: 68px;
+    }
+    .hourly-daily-rent-wrapper .rental-time-hour {
+        width: 50px;
+    }
+    .hourly-daily-rent-wrapper .rental-date-days-wrapper {
+        width: 433px;
+    }
+    .hourly-daily-rent-wrapper .rental-time-hours-wrapper {
+        width: 435px;
+    }
+}
+
+/*
+Стили для тестовой кнопки, удалить потом
+*/
+.test-on-complete:hover {
+    cursor: pointer;
+}

@@ -4,6 +4,153 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
     </head>
-    <body></body>
+    <body>
+        <div class="wrapper">
+            <div class="hourly-daily-rent-wrapper">
+                <div class="toggle-rent-modes">
+                    <button class="rent-mode-btn rent-hourly-btn active">Почасовая аренда</button>
+                    <button class="rent-mode-btn rent-daily-btn">Посуточная аренда</button>
+                </div>
+                <div class="hourly-wrapper">
+                    <div class="rental-date-wrapper">
+                        <div class="rental-date-title">Дата аренды</div>
+                        <div class="rental-date">
+                            <div class="rental-date-arrow rental-date-arrow-left">
+                                <svg
+                                    width="6"
+                                    height="9"
+                                    viewBox="0 0 6 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M4.75828 8.02973L1.23828 4.49973L4.75828 0.969727"
+                                        stroke="#171524"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="rental-date-arrow rental-date-arrow-right">
+                                <svg
+                                    width="6"
+                                    height="9"
+                                    viewBox="0 0 6 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.23828 8.02973L4.75828 4.49973L1.23828 0.969727"
+                                        stroke="#171524"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="rental-date-days-wrapper">
+                                <div class="rental-date-days"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rental-time-wrapper">
+                        <div class="rental-date-title">Время аренды</div>
+                        <div class="rental-time">
+                            <div class="rental-date-arrow rental-time-arrow-left">
+                                <svg
+                                    width="6"
+                                    height="9"
+                                    viewBox="0 0 6 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M4.75828 8.02973L1.23828 4.49973L4.75828 0.969727"
+                                        stroke="#171524"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="rental-date-arrow rental-time-arrow-right">
+                                <svg
+                                    width="6"
+                                    height="9"
+                                    viewBox="0 0 6 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.23828 8.02973L4.75828 4.49973L1.23828 0.969727"
+                                        stroke="#171524"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="rental-time-hours-wrapper">
+                                <div class="rental-time-hours"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="daily-wrapper">
+                    <div class="daily-rental-date-wrapper">
+                        <div class="rental-date-title">Дата и время аренды</div>
+                        <div class="daily-rental-date">
+                            <div class="rental-date-arrow daily-rental-date-arrow-left">
+                                <svg
+                                    width="6"
+                                    height="9"
+                                    viewBox="0 0 6 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M4.75828 8.02973L1.23828 4.49973L4.75828 0.969727"
+                                        stroke="#171524"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="rental-date-arrow daily-rental-date-arrow-right">
+                                <svg
+                                    width="6"
+                                    height="9"
+                                    viewBox="0 0 6 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.23828 8.02973L4.75828 4.49973L1.23828 0.969727"
+                                        stroke="#171524"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="daily-rental-date-days-wrapper">
+                                <div class="daily-rental-date-days"></div>
+                            </div>
+                        </div>
+                        <div class="daily-rental-time"></div>
+                    </div>
+                    <div class="daily-return-date-wrapper">
+                        <div class="rental-date-title">Дата и время сдачи</div>
+                    </div>
+                </div>
+            </div>
+            <button class="test-on-complete">On Complete</button>
+        </div>
+        <script src="libs/jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
